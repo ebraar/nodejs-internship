@@ -49,9 +49,8 @@ const tokenCheck = async (req, res, next) => {
         }
 
         req.user = userInfo
+        next();
     })
-
-    next();
 }
 
 module.exports = {

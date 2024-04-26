@@ -49,7 +49,7 @@ const register = async (req, res) => {
 }
 
 const me = async (req, res) => {
-    return new Response(req.user)
+    return new Response(req.user).success(res)
 }
 
 module.exports = {
