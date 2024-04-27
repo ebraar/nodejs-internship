@@ -1,4 +1,6 @@
 const jwt = require("jsonwebtoken")
+// const user = require("../models/user.model")
+
 
 const createToken = async (user, res) => {
     const payload = {
@@ -56,4 +58,4 @@ const tokenCheck = async (req, res, next) => {
 module.exports = {
     createToken,
     tokenCheck
-}
+}  

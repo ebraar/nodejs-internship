@@ -6,6 +6,7 @@ const { response } = require("express")
 const { createToken } = require("../middlewares/validation/auth")
 
 const login = async (req, res) => {
+    console.log("login");
     const { email, password } = req.body
 
     const userInfo = await user.findOne({email})
